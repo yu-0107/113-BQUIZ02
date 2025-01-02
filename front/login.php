@@ -43,8 +43,9 @@ function login() {
                 if (parseInt(res) == 1) {
                     if (user.acc == 'admin') {
                         location.href = 'admin.php'
+                    } else {
+                        location.href = 'index.php'
                     }
-                    location.href = 'index.php'
                 } else {
                     alert("密碼錯誤")
                 }
